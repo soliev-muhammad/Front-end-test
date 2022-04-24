@@ -16,7 +16,7 @@ function Post(props) {
               marginTop: 5, 
               left: 0,
               right: 0,
-        }} >
+        }}>
       <PostCardMedia post={props.post}/>
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">

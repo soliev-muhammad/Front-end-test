@@ -1,0 +1,56 @@
+.pagination {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    max-width: 400px;
+}
+
+.page-num {
+    padding: 10px;
+    cursor: pointer;
+    margin-right: 1px;
+    position: relative;
+}
+.page-num:hover {
+    background: #cee1f3; 
+}
+
+.page-link {
+    text-decoration: none;
+    color: #1976d2; 
+}
+.page-link::before {
+    border: 1px solid #8eaac7;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.current-page {
+    margin-top: 5px;
+    margin-bottom: 0px;
+    padding-left: 122px;
+    padding-right: 122px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-family: "Roboto","Helvetica","Arial",sans-serif;
+    font-weight: 100;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: #1976d2;
+    max-width: 242px;
+    background-color: white;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.5);
+}
+.posts-not-found {
+    color: red;
+    font-weight: 400;
+    font-family: "Roboto","Helvetica","Arial",sans-serif;
+}
+
