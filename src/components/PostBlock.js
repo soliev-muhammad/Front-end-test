@@ -13,7 +13,7 @@ function PostBlock() {
   const [currentPage, setCurrentPage] = useState(1);
   const [postsPerPage] = useState(10);
 
-  //Функция для взятия информации для постов
+  //Функция для получения информации для постов
   async function fetchPosts() {
     const response = await axios.get("http://jsonplaceholder.typicode.com/posts");
     setPosts(response.data);
